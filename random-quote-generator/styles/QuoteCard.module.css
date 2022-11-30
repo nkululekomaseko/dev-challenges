@@ -1,0 +1,19 @@
+.quote_card__container {
+  display: flex;
+  height: 100%;
+  width: 715px;
+}
+
+.quote_card__left_bar {
+  width: 80px;
+  background-color: #f7df94;
+  margin-right: 100px;
+}
+
+.quote_card__text {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 120%;
+  margin: 0;
+  padding: 0;
+}
