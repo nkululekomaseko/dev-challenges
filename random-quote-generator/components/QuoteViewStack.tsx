@@ -1,5 +1,6 @@
 import { useState } from "react";
 import QuoteCard from "./QuoteCard";
+import styles from "../styles/QuoteViewStack.module.css";
 
 type QuoteData = {
   quoteText: string;
@@ -11,8 +12,12 @@ const QuoteViewStack = (): JSX.Element => {
   const [quoteData, setQuoteData] = useState<QuoteData>(dummyQuoteData);
   return (
     <>
-      <div>
+      <div className={styles.quote_stack__container}>
         <QuoteCard text={quoteData.quoteText} />
+        <div className={styles.quote_stack__button_container}>
+          <p className={styles.quote_stack__author}>{quoteData.quoteAuthor}</p>
+          <p className={styles.quote_stack__genre}>{quoteData.quoteGenre}</p>
+        </div>
       </div>
     </>
   );
